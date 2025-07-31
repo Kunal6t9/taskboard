@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TaskBoard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Trello</h1>
+
+  <div id="board" class="board">
+    <!-- To Do List -->
+    <div class="list" data-list-id="todo">
+      <h2>To Do</h2>
+      <div class="card-container" id="todo-cards"></div>
+      <input type="text" class="card-input" placeholder="Add task" />
+      <button class="add-card-btn">Add</button>
+    </div>
+
+    <!-- In Progress List -->
+    <div class="list" data-list-id="in-progress">
+      <h2>In Progress</h2>
+      <div class="card-container" id="in-progress-cards"></div>
+      <input type="text" class="card-input" placeholder="Add task" />
+      <button class="add-card-btn">Add</button>
+    </div>
+
+    <!-- Done List -->
+    <div class="list" data-list-id="done">
+      <h2>Done</h2>
+      <div class="card-container" id="done-cards"></div>
+      <input type="text" class="card-input" placeholder="Add task" />
+      <button class="add-card-btn">Add</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
