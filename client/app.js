@@ -76,7 +76,7 @@ function renderCard(text, container, cardId) {
   card.appendChild(span);
   card.appendChild(delBtn);
 
-  // Drag
+  // Dragg
   card.addEventListener('dragstart', e => {
     e.dataTransfer.setData('card-id', cardId);
   });
